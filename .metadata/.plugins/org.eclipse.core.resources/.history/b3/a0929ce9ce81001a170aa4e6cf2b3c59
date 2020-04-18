@@ -1,0 +1,20 @@
+package com.smoothstack.weekOneProject;
+
+public class Book {
+	private Integer bookId;
+	private String bookName;
+	private Integer authorId;
+	/**
+	 * @return the bookId
+	 */
+	public Integer getBookId() {
+		return bookId;
+	}
+	/**
+	 * @param bookId the bookId to set
+	 */
+	public void setBookId(Integer bookId) {
+		this.bookId = bookId;
+	}
+	
+}
