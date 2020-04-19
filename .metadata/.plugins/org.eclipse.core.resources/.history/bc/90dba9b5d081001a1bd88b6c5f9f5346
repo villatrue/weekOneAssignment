@@ -4,8 +4,6 @@ public class Book {
 	private Integer bookId;
 	private String bookName;
 	private Integer authorId;
-	private Integer publisherId;
-	
 	/**
 	 * @return the bookId
 	 */
@@ -41,18 +39,6 @@ public class Book {
 	 */
 	public void setAuthorId(Integer authorId) {
 		this.authorId = authorId;
-	}
-	/**
-	 * @return the publisherId
-	 */
-	public Integer getPublisherId() {
-		return publisherId;
-	}
-	/**
-	 * @param publisherId the publisherId to set
-	 */
-	public void setPublisherId(Integer publisherId) {
-		this.publisherId = publisherId;
 	}
 	
 }

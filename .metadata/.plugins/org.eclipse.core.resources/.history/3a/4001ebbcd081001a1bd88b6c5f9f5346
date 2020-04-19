@@ -7,7 +7,7 @@ package com.smoothstack.weekOneProject;
 public class Author {
 	private Integer authorId;
 	private String authorName;
-	
+	private Integer publisherID;
 	/**
 	 * @return the authorName
 	 */
@@ -20,7 +20,18 @@ public class Author {
 	public void setAuthorName(String authorName) {
 		this.authorName = authorName;
 	}
-	
+	/**
+	 * @return the publisherID
+	 */
+	public Integer getPublisherID() {
+		return publisherID;
+	}
+	/**
+	 * @param publisherID the publisherID to set
+	 */
+	public void setPublisherID(Integer publisherID) {
+		this.publisherID = publisherID;
+	}
 	/**
 	 * @return the authorId
 	 */
