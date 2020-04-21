@@ -1,0 +1,14 @@
+package com.smoothstack.weekOneProject;
+
+import java.io.BufferedReader;
+
+public class FileReader {
+
+	public static void main(String[] args) {
+		try(BufferedReader bufStream = new BufferedReader(new File Reader("resources"))) {
+			//resources/inputFiles/Trct
+		}
+	}
+
+}
+ 

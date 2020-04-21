@@ -1,0 +1,19 @@
+package com.smoothstack.weekOneProject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class UserInput {
+	
+	public static void main(String[] args) throws Exception{
+		
+		System.out.println("Enter a Book ID");
+		
+		InputStreamReader is = new InputStreamReader(System.in);
+		
+		BufferedReader br = new BufferedReader(is);
+		
+		Integer n = br.readLine();
+	}
+
+}

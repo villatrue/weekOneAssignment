@@ -1,0 +1,7 @@
+package com.smoothstack.weekOneProject;
+
+public class AuthorService {
+	public String addAuthor(Author author){
+		
+	}
+}

@@ -1,0 +1,39 @@
+package com.smoothstack.weekOneProject;
+
+import java.io.BufferedWriter;
+
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class CreateAuthor {
+	
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Add author ID");
+		Integer authorID = input.nextInt();
+		input.nextLine();
+		System.out.println("Author Id is "+authorID+" Add author name");
+		String authorName = input.nextLine();
+		System.out.println("Author name is "+authorName);
+		Author addedAuthor = new Author(authorID, authorName);
+		System.out.println(addedAuthor);
+
+		
+		
+		
+		try(BufferedWriter bufStream = new BufferedWriter(new FileWriter("./resources/inputFiles/authors.txt"))){
+			
+				bufStream.write(addedAuthor.getAuthorId().toString()+"/t"+addedAuthor.getAuthorName());
+			    System.out.println("File written Successfully");
+			}
+		catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Failed to read from File");
+		
+		}
+	}
+}
